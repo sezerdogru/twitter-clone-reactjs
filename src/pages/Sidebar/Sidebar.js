@@ -19,7 +19,7 @@ function Sidebar() {
 	const sidebarOptions = [
 	{text:"Home", Icon:HomeIcon, active:true},
 	{text:"Search", Icon:SearchIcon},
-	{text:"NotificationsNone", Icon:NotificationsNoneIcon},
+	{text:"Notifications ", Icon:NotificationsNoneIcon},
 	{text:"Messages", Icon:MailOutlineIcon},
 	{text:"Bookmarks", Icon:BookmarkBorderIcon},
 	{text:"Lists", Icon:ListAltIcon},
@@ -32,8 +32,8 @@ function Sidebar() {
 		<div className="sidebar">
  
 		<TwitterIcon className="sidebar__twitterIcon" />
-		{sidebarOptions.map(sidebarOption => (
-			<SidebarOption text={sidebarOption.text} Icon={sidebarOption.Icon} active={sidebarOption.active} />
+		{sidebarOptions.map((sidebarOption,index) => (
+			<SidebarOption key={index} text={sidebarOption.text} Icon={sidebarOption.Icon} active={sidebarOption.active} />
 		))}
 
 		<Button variant="outlined" className="sidebar__tweet" fullWidth>Tweet</Button>
