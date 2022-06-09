@@ -31,7 +31,7 @@ function Sidebar() {
 	return(
 		<div className="sidebar">
  
-		<TwitterIcon />
+		<TwitterIcon className="sidebar__twitterIcon" />
 		{sidebarOptions.map(sidebarOption => (
 			<SidebarOption text={sidebarOption.text} Icon={sidebarOption.Icon} active={sidebarOption.active} />
 		))}
