@@ -4,7 +4,11 @@ import './Feed.css'
 function Feed() {
 	return(
 		<div className="feed">
-sd
+			<div className="feed__header">
+				<h2>Home</h2>
+			</div>
+
+			<p>ABC</p>
 
 
 		</div>

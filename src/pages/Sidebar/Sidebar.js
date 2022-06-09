@@ -19,7 +19,7 @@ function Sidebar() {
 	const sidebarOptions = [
 	{text:"Home", Icon:HomeIcon, active:true},
 	{text:"Search", Icon:SearchIcon},
-	{text:"NotificationsNone", Icon:NotificationsNoneIcon},
+	{text:"Notifications ", Icon:NotificationsNoneIcon},
 	{text:"Messages", Icon:MailOutlineIcon},
 	{text:"Bookmarks", Icon:BookmarkBorderIcon},
 	{text:"Lists", Icon:ListAltIcon},
