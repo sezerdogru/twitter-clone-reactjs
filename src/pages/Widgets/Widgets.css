@@ -5,7 +5,9 @@
 
 .widgets__input{
   display: flex;
-  align-items: center;
+  align-items: center; 
+  background-color: white;
+  z-index: 100;
   padding: 10px 20px;
   background-color: var(--twitter-hover-color);
   border-radius: 999px;
