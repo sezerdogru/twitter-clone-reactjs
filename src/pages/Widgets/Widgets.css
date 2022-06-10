@@ -1,16 +1,21 @@
 .widgets {
-  flex: 0.3;
-  padding: 5px 40px 0 30px;
+  flex: 0.3; 
 }
 
 .widgets__input{
   display: flex;
   align-items: center; 
-  background-color: white;
-  z-index: 100;
+  background-color: white; 
   padding: 10px 20px;
   background-color: var(--twitter-hover-color);
-  border-radius: 999px;
+  border-radius: 999px; 
+}
+
+.widgets__input--wrapper{
+  padding: 5px 40px 5px 30px;
+  background-color: white; 
+  position: sticky;
+  top: 0;   
 }
 
 .widgets__input > input{
@@ -30,6 +35,7 @@
   background-color: var(--twitter-background);
   margin-top: 20px;
   border-radius: 20px; 
+  margin: 20px 40px 5px 30px;
 }
 
 .widgets__trends > h2 {

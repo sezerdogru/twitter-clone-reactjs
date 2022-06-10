@@ -6,12 +6,14 @@ import SearchIcon from '@mui/icons-material/Search';
 function Widgets() {
 	return(
 		<div className="widgets">
+		<div className="widgets__input--wrapper">
 			<div className="widgets__input">
 				<SearchIcon />
 				<input
 					type="text"
 					placeholder="Search Twitter"
 				/>
+			</div>
 			</div>
 			<div className="widgets__trends">
 				<h2>Trends for you</h2>
