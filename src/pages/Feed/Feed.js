@@ -11,7 +11,8 @@ function Feed() {
 			</div> 
 			<Tweetbox />
 
-			<Post 
+			{[1,2,3,31,31,31,3,131,].map(post => (
+				<Post 
 				displayName="Sezer Doğru"
 				username="sezerdogru"
 				verified={true}
@@ -19,6 +20,7 @@ function Feed() {
 				image="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
 				avatar="https://pbs.twimg.com/profile_images/1506021070666612737/9nYOxDqS_400x400.jpg"
 			/>
+			))}
 		</div>
 	)
 }
