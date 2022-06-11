@@ -3,7 +3,7 @@
 .post {
   display: flex;
   align-items: flex-start;
-  border: 1px solid $twitter_hover_color; 
+  border-bottom: 1px solid $twitter_hover_color; 
   padding-bottom: 10px;
 
   &:hover {
@@ -23,38 +23,65 @@
 
 .post__footer {
   display: flex; 
-  margin-top: 20px; 
+  margin-top: 10px; 
   justify-content: space-around;
+  color:gray;
 
   div {
     @extend .displayAlign;
-     
+    flex:1; 
 
-    &:hover {
-      background-color:red;
+    div {
+      flex:0;
     }
-
   }
 
-  .comment{
+  .MuiSvgIcon-root { 
+    padding:10px;
+    border-radius:$round_border;
+  }  
 
+  .comment, .share{ 
+    div{ 
+      &:hover {
+        color:$twitter_color; 
 
-    &:hover {
-      background-color:red;
+        .MuiSvgIcon-root {
+           background-color:lightblue;
+           padding:10px;
+           transition:background-color 500ms ease;
+        }  
+      } 
     }
   }
 
   .rt{
-     
+     div{ 
+        &:hover {
+          color:green; 
+
+          .MuiSvgIcon-root {
+             background-color:lightgreen;
+             padding:10px;
+             transition:background-color 500ms ease;
+          }  
+        } 
+      }
   }
 
   .fav{
-    
-  }
+    div{ 
+        &:hover {
+          color:pink; 
 
-  .share{
-     
-  }
+          .MuiSvgIcon-root {
+             background-color:$fav_color;
+             padding:10px;
+             transition:background-color 500ms ease;
+          }  
+        } 
+      }
+  } 
 
 }
 

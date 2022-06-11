@@ -1,9 +1,26 @@
 @import "variable";
 
 .trend {
-	display: flex;
-	flex-direction: column;
-	padding:10px 20px;
+	display: flex; 
+	padding:10px 10px 10px 20px;
+	justify-content: space-between;
+
+	.trend__left{
+		display: flex; 
+		flex-direction: column; 
+	}
+
+	.MuiSvgIcon-root {
+		padding:5px; 
+		height:20px;
+		width:20px;
+		color:gray;
+
+		&:hover {
+			background-color:lightblue;
+			border-radius:$round_border;
+		}  
+	}
 
 	&:hover {
 		@include hover();

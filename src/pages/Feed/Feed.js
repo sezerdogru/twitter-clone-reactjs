@@ -102,6 +102,7 @@ function Feed() {
 				<h2>Home</h2>
 			</div> 
 			<Tweetbox />
+			<div className="space" />
 
 			{tweets.map((post,index) => (
 				<Post 

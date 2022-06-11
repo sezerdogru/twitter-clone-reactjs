@@ -13,7 +13,7 @@ const Post  =
     <div className="post">
 
     	<div className="post__avatar">
-    		<Avatar src={avatar} />
+    		<Avatar src={avatar} sx={{ width: 50, height: 50 }} />
     	</div>
 
     	<div className="post__body">
@@ -33,10 +33,26 @@ const Post  =
           </div>
            <img src={image} alt="" />
           <div className="post__footer">
-            <div className="comment"><ChatBubbleOutlineIcon fontSize="small" /> {comment}</div>
-            <div className="rt"><RepeatIcon fontSize="small" /> {rt}</div>
-            <div className="fav"><FavoriteBorderIcon fontSize="small" /> {fav}</div>
-            <div className="share"><PublishIcon fontSize="small" /></div>
+            <div className="comment">
+              <div>
+                <ChatBubbleOutlineIcon fontSize="small" />{comment} 
+              </div>
+            </div>
+            <div className="rt">
+              <div>
+                <RepeatIcon fontSize="small" />{rt}
+              </div>
+            </div> 
+            <div className="fav">
+              <div>
+                <FavoriteBorderIcon fontSize="small" />{fav}
+              </div>
+            </div>
+            <div className="share">
+              <div>
+                <PublishIcon fontSize="small" />
+              </div>
+            </div>
           </div>
          
 

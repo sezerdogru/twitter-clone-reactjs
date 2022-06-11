@@ -1,17 +1,21 @@
 @import "variable"; 
 
 .feed {
-  flex : 0.5;
+  flex : 0.45;
   border-right: 1px solid $twitter_hover_color;
+}
+
+.space {
+  border-top:1px solid $twitter_hover_color;
+  height:5px;
 }
 
 .feed__header {
     @extend .sticky;
-    background-color: white; 
-    border: 1px solid $twitter_background; 
+    background-color: white;  
     border-right: none;
     border-left: none;
-    padding: 10px 20px 15px 20px;
+    padding: 10px 10px 10px 15px;
 
     h2{
       font-size: 20px;
