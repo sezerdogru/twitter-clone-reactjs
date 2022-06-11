@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.scss';
 import Sidebar from './pages/Sidebar/Sidebar'
 import Feed from './pages/Feed/Feed'
 import Widgets from'./pages/Widgets/Widgets'

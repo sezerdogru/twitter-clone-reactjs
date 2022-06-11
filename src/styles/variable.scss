@@ -1,0 +1,25 @@
+$twitter_color: rgb(29, 155, 240);
+$twitter_background:  rgb(247, 249, 249);
+$twitter_hover_color: rgb(239, 243, 244);
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.displayAlign {
+    display: flex;
+    align-items: center;
+}
+
+.displayJust {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin hover(){
+    background-color: $twitter_hover_color;
+    cursor: pointer;
+    transition: background-color 500ms ease;
+}

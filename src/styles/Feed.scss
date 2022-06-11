@@ -1,0 +1,22 @@
+@import "variable"; 
+
+.feed {
+  flex : 0.5;
+  border-right: 1px solid $twitter_hover_color;
+}
+
+.feed__header {
+    @extend .sticky;
+    background-color: white; 
+    border: 1px solid $twitter_background; 
+    border-right: none;
+    border-left: none;
+    padding: 10px 20px 15px 20px;
+
+    h2{
+      font-size: 20px;
+      font-weight: 700;
+    }
+  } 
+ 
+ 

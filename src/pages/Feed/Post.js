@@ -1,5 +1,5 @@
 import React from 'react';
-import './Post.css' 
+import '../../styles/Post.scss' 
 import { Avatar } from "@mui/material";
 import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
@@ -8,7 +8,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import PublishIcon from "@mui/icons-material/Publish";
 
 const Post  =   
-  ({ displayName, username, verified, text, image, avatar } ) =>  {
+  ({ displayName, username, verified, comment, fav,rt,text, image, avatar } ) =>  {
   return (
     <div className="post">
 
@@ -33,10 +33,10 @@ const Post  =
           </div>
            <img src={image} alt="" />
           <div className="post__footer">
-            <ChatBubbleOutlineIcon fontSize="small" />
-            <RepeatIcon fontSize="small" />
-            <FavoriteBorderIcon fontSize="small" />
-            <PublishIcon fontSize="small" />
+            <div className="comment"><ChatBubbleOutlineIcon fontSize="small" /> {comment}</div>
+            <div className="rt"><RepeatIcon fontSize="small" /> {rt}</div>
+            <div className="fav"><FavoriteBorderIcon fontSize="small" /> {fav}</div>
+            <div className="share"><PublishIcon fontSize="small" /></div>
           </div>
          
 

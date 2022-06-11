@@ -1,5 +1,5 @@
 import React from 'react';
-import './Tweetbox.css'
+import '../../styles/Tweetbox.scss'
 import {Avatar, Button} from "@mui/material"
 
 function Tweetbox () { 
@@ -7,7 +7,10 @@ function Tweetbox () {
     <div className="tweetbox">
       <form> 
         <div className="tweetbox__input">
-          <Avatar src="https://pbs.twimg.com/profile_images/1506021070666612737/9nYOxDqS_400x400.jpg" />
+          <Avatar
+            src="https://pbs.twimg.com/profile_images/1506021070666612737/9nYOxDqS_400x400.jpg" 
+            height="35px"
+          />
           <input 
             placeholder="What's happening?"  
             type="text"

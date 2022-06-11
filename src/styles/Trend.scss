@@ -1,0 +1,24 @@
+@import "variable";
+
+.trend {
+	display: flex;
+	flex-direction: column;
+	padding:10px 20px;
+
+	&:hover {
+		@include hover();
+	}
+
+	span {
+		font-size: 14px;
+		color: gray;
+	}
+
+	h2 {
+		font-size: 16px; 
+		font-weight: 600;
+		padding:0;
+	}
+}
+ 
+ 
