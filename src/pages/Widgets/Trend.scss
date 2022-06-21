@@ -8,6 +8,10 @@
 	.trend__left{
 		display: flex; 
 		flex-direction: column; 
+
+		h2 {
+		    padding: 0; 
+		}
 	}
 
 	.MuiSvgIcon-root {

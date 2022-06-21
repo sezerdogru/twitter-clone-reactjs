@@ -1,6 +1,4 @@
-import React from "react"
-import '../../styles/Sidebar.scss'
-import SidebarOption from'./SidebarOption'
+import React from "react"   
 import TwitterIcon from '@mui/icons-material/Twitter';
 import HomeIcon from '@mui/icons-material/Home';
 import TagIcon from '@mui/icons-material/Tag';
@@ -12,11 +10,22 @@ import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import MoreHorizIcon   from '@mui/icons-material/MoreHoriz';
 import {Button} from "@mui/material"
 
+import SidebarOption from'./SidebarOption'
+import './Sidebar.scss' 
 
-function Sidebar() {
+function Sidebar() {  
+	return(
+		<div className="sidebar"> 
+			<TwitterIcon className="sidebar__twitterIcon" />
+			{sidebarOptions.map((sidebarOption,index) => (
+				<SidebarOption key={index} text={sidebarOption.text} Icon={sidebarOption.Icon} active={sidebarOption.active} />
+			))} 
+			<Button variant="outlined" className="sidebar__tweet" fullWidth>Tweet</Button> 
+		</div>
+	)
+}
 
-
-	const sidebarOptions = [
+const sidebarOptions = [
 	{text:"Home", Icon:HomeIcon, active:true},
 	{text:"Explore", Icon:TagIcon},
 	{text:"Notifications ", Icon:NotificationsNoneIcon},
@@ -25,21 +34,6 @@ function Sidebar() {
 	{text:"Lists", Icon:ListAltIcon},
 	{text:"Profile", Icon:PermIdentityOutlinedIcon},
 	{text:"More", Icon:MoreHorizIcon},
-	]
-
-
-	return(
-		<div className="sidebar">
- 
-		<TwitterIcon className="sidebar__twitterIcon" />
-		{sidebarOptions.map((sidebarOption,index) => (
-			<SidebarOption key={index} text={sidebarOption.text} Icon={sidebarOption.Icon} active={sidebarOption.active} />
-		))}
-
-		<Button variant="outlined" className="sidebar__tweet" fullWidth>Tweet</Button>
-
-		</div>
-	)
-}
+] 
 
 export default Sidebar

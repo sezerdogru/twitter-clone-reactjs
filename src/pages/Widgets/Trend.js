@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../styles/Trend.scss'
 import MoreHorizIcon   from '@mui/icons-material/MoreHoriz';
+import './Trend.scss'
 
 function Trend({title,count}){
   return ( 

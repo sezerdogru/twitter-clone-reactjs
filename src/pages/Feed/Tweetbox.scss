@@ -8,6 +8,13 @@
 		display: flex;
 		flex-direction: column;
 	}
+
+	&:after {
+		content: '';
+		display: flex;
+		border-top:1px solid $twitter_hover_color;
+  		margin-top: 5px;
+	}
 }
 
  

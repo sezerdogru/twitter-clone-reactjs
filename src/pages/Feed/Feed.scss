@@ -3,12 +3,7 @@
 .feed {
   flex : 0.45;
   border-right: 1px solid $twitter_hover_color;
-}
-
-.space {
-  border-top:1px solid $twitter_hover_color;
-  height:5px;
-}
+} 
 
 .feed__header {
     @extend .sticky;

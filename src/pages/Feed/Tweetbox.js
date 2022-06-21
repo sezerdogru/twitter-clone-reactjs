@@ -1,6 +1,7 @@
 import React from 'react';
-import '../../styles/Tweetbox.scss'
 import {Avatar, Button} from "@mui/material"
+
+import './Tweetbox.scss'
 
 function Tweetbox () { 
   return (

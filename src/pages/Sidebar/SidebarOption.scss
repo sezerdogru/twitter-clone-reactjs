@@ -26,6 +26,9 @@
   }
 }  
 
-.sidebarOption__row--active > h2 { 
-  font-weight: bold  ;
+.sidebarOption__row--active {
+  h2 { 
+    font-weight: bold  ;
+  }
+
 }

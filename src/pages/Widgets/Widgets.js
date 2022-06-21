@@ -1,7 +1,7 @@
 import React from "react"
-import '../../styles/Widgets.scss'
 import Trend from "./Trend"
 import SearchIcon from '@mui/icons-material/Search';
+import './Widgets.scss'
 
 function Widgets() {
 	return(

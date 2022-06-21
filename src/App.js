@@ -1,7 +1,7 @@
-import './styles/App.scss';
-import Sidebar from './pages/Sidebar/Sidebar'
-import Feed from './pages/Feed/Feed'
-import Widgets from'./pages/Widgets/Widgets'
+import Sidebar from 'pages/Sidebar/Sidebar'
+import Feed from 'pages/Feed/Feed'
+import Widgets from'pages/Widgets/Widgets'
+import 'App.scss';
 
 function App() {
   return (
